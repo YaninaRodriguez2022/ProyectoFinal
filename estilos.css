@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("imag/fondos/fondoPrincipal.jpg");
+    background-size: 100%;
+}
+
+
+
+.formularioContainer {
+    max-width: 25em;
+    padding: 1.3em;
+    margin: 0 auto;
+    background-color: rgba(120, 119, 123, 0.3);
+    border-radius: 0.5em;
+    box-shadow: inset 1px 1px 22px 4px rgba(0, 0, 0, 0.85);
+}
+
+/* .containerMapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.bg-Titulo {
+    background-color: rgb(84, 31, 20);
+    border-radius: 2px;
+}
+.effectHover ul li::before{
+  
+        content: "";
+        height: 3px;
+        width: 0%;
+        background: yellow;
+        position: absolute;
+        left: 0;
+        bottom: -12px;
+        transition: 0.5s ease-out;
+     
+}
+.effectHover ul li:hover:before{
+
+    width: 100%;
+}
+
+.gridPresentacion {
+    display: grid;
+    grid-template-areas:
+        "imag section"
+        "imag section"
+    ;
+}
+
+.imagPresentacion {
+
+    padding: 15%;
+    grid-area: imag;
+}
+
+.titlePrincipal {
+    grid-area: section;
+}
+
+.titlePrincipal p{
+    padding: 5%;
+}
+
+#animacionImag {
+    cursor: pointer;
+    box-shadow: 1px 10px 25px;
+    rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+
+}
+#animacionImag :hover{
+    width: 150%;
+    height: 150%;
+   
+}
+
+#animacionImag :hover {
+    
+    filter: brightness(80%);
+}
+
+.gridImage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+
+
+}
+
+.Prueba {
+    position: relative;
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+
+.centrarImagen {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    position: absolute;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    padding: 12px 5px 12px 5px;
+    color: antiquewhite;
+    margin: 20px 30px;
+}
+
+
+#imagPosition img {
+
+
+    padding: 0;
+    width: 100%;
+    height: 10%;
+
+}
+
+.alineacion {
+    display: flex;
+    justify-content: center;
+    margin-top: -30;
+
+}
+
+#alineacionProducts img {
+    display: block;
+    margin: 0px auto;
+}
+
+.alineacionProducts article {
+    text-align: center;
+    background-image: url(/imag/fondos/texturiNegra.jpg);
+    border: solid 1px #020304;
+    margin-inline: 10px;
+
+}
+
+#alineacion article img {
+    position: absolute;
+    margin-top: -40rem;
+}
+
+.containerContacto {
+    display: flex;
+    justify-content: space-around;
+    color: antiquewhite;
+}
+
+#logoContenedor {
+    background-color: #171717;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 0.5rem 1rem;
+    /*equivale a decir que un 100%*/
+    top: 0px;
+    /*para que se ponga lo mas arriba, osea no tenga mas margen*/
+    left: 0px;
+    /*para que se ponga lo mas a la izquierda, osea no tenga mas margen*/
+
+
+}
+
+#logoContenedor div a {
+    color: #eeeeee;
+}
+
+.containerNovedades {
+
+    padding: 30px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.containerAbout {
+
+    padding: 0px 50px;
+    margin: 40px;
+    display: flex;
+    justify-content: space-around;
+    color: antiquewhite;
+}
+
+.containerNovedades article {
+    text-align: center;
+    background-color: #CC9E61;
+    border: solid 1px #020304;
+    margin-inline: 10px;
+
+}
+
+#logoTamaño img {
+
+    width: 150px;
+    height: 82px;
+    ;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor ol {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.contenedorProducts {
+    padding: 3px 50px;
+    margin: 40px;
+    display: flex;
+    justify-content: space-around;
+    color: antiquewhite;
+}
+
+.contenedorProducts h3 {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    padding: 30px 0px;
+}
+
+/*--FOOTER--*/
+.footer {
+    display: block;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #eeeeee;
+    background-color: #1b1a17;
+}
+
+footer ol {
+    list-style: none;
+    padding-left: 0;
+    background-color: #1b1a17;
+}
+
+.socials {
+    text-align: center;
+}
+
+.socials img {
+    margin-inline: 0.3rem;
+    /*margen a cada lado*/
+}
+
+
+#redesSociales {
+    text-align: left;
+    list-style-type: none;
+
+}
